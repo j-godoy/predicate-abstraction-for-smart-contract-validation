@@ -77,12 +77,13 @@ pred constructor[ein: EstadoConcreto, eout: EstadoConcreto, sender:Address, ther
 	eout._installer = thermostatInstaller
 	eout._user = thermostatUser
 	eout._targetTemperature = 4
+	eout._state = Created
 
 	//eout._installer = ein._installer
 	//eout._user = ein._user
 	//eout._targetTemperature = ein._targetTemperature
 	eout._mode = ein._mode
-	eout._state = ein._state
+	//eout._state = ein._state
 }
 
 pred startThermostat[ein: EstadoConcreto, eout: EstadoConcreto, sender: Address] {
